@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nAleatorio = Math.random()*100;
+        let nAleatorioIn = Math.round(nAleatorio);
+        document.write(nAleatorioIn);
+        let resposta1 = prompt("Digite um numero de 1 a 100 e tente acertar o número");
+        let resposta = (resposta1 == nAleatorioIn) ?  
+       " Parabéns! Você ganhou!" :
+       " Que pena! Na proxima você ganha!";
+       document.write(resposta)
+
+    </script>
+</body>
+</html>
