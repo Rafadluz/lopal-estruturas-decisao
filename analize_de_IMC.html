@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let peso1 = prompt("Quanto você pesa?");
+        //let altura1 = prompt("Qual é a sua altura?");
+        //document.write(resposta + ", seu IMC é: " + imc(peso1, altura1))
+        /*let peso = prompt("Quanto você pesa?")
+        let altura = prompt("Qual é a sua altura?")
+        function IMC(peso, altura){
+            return peso/(altura*altura)
+         }
+         let resposta = IMC (resposta >=18,5 && resposta <=35,0)?
+        "Seu IMC está normal";
+        "Seu IMC está a baixo do normal"
+        "Seu IMC está a cima do normal"
+        document.write(resposta);*/
+        let peso = prompt("Quanto você pesa?")
+        let altura = prompt("Qual é a sua altura?")
+        function IMC(peso, altura){
+            return peso/(altura*altura)
+         }
+         let resultado = IMC(peso, altura);
+        let resposta = (resultado >=18.5 && resultado <=35.0) ?  
+       "Seu IMC está normal" :
+       (resultado >=0 && resultado <18.5)?
+       "Seu IMC está a baixo do normal":
+       (resultado >35.0 && resultado <=9999) ?
+       "Seu IMC está a cima do normal":
+        "Valor inválido"
+       document.write(resposta);
+       /*(IMC >=36,0 && IMC <=9999) ?
+       "Seu IMC está a cima do normal":*/
+
+
+    </script> 
+</body>
+</html>

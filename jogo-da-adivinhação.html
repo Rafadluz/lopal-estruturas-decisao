@@ -7,14 +7,23 @@
 </head>
 <body>
     <script>
-        let nAleatorio = Math.random()*100;
+        let nAleatorio = Math.random()*100 + 1;
         let nAleatorioIn = Math.round(nAleatorio);
         document.write(nAleatorioIn);
         let resposta1 = prompt("Digite um numero de 1 a 100 e tente acertar o número");
-        let resposta = (resposta1 == nAleatorioIn) ?  
+        let resposta = (resposta1 >=1 && resposta1 <=100)?
+            (resposta1 == nAleatorioIn) ?  
        " Parabéns! Você ganhou!" :
-       " Que pena! Na proxima você ganha!";
-       document.write(resposta)
+       " Que pena! Na proxima você ganha!":
+       "Número inválido";
+       document.write(resposta);
+
+       /*let resposta1 = prompt("Digite um numero de 1 a 100 e tente acertar o número")
+       if(resposta1 == n){
+        document.write (nanana)
+    }else{
+        document.write(nenene);
+    }*/
 
     </script>
 </body>
